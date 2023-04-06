@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #modositandoElem {
+        width: 150px;
+        height: 150px;
+        background-color: lightgrey;
+        border: 1px solid black;
+        box-shadow: 3px 3px 8x black;
+        position: relative;
+        left: 10px;
+    }
+</style>
+
+
+<body>
+
+    <button type="button" id="szoveg">Szöveg elrejtése</button>
+    <button type="button" id="megjelenit">Szöveg megjelenítése</button>
+    <div id="modositandoElem">Szöveg elrejtése</div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $("#szoveg").click(function () {
+                $("#modositandoElem").fadeOut("fast");
+            });
+
+
+            $("#szoveg").click(function () {
+                $("#modositandoElem").fadeIn("slow");
+            });
+
+        });
+
+
+
+    </script>
+</body>
+
+</html>

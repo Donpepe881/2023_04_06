@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="text" id="szoveg">
+    <div id="halmazAllapot"></div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            if (("#szoveg") == "jég") {
+                $("#halmazAllapot").text("szilárd");
+            }
+            else if (("#szoveg") == "gőz") {
+                $("#halmazAllapot").text("légnemű");
+            }
+            else {
+                $("#halmazAllapot").text("folyékony");
+            }
+
+
+
+        });
+
+
+
+    </script>
+
+</body>
+
+</html>
